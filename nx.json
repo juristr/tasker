@@ -2,23 +2,14 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
     "build": {
-      "dependsOn": [
-        "^build"
-      ],
-      "outputs": [
-        "{projectRoot}/.next"
-      ],
+      "dependsOn": ["^build"],
+      "outputs": ["{projectRoot}/.next"],
       "cache": true
     },
-    "e2e": {
-      "cache": true
-    },
-    "lint": {
-      "cache": true
-    },
-    "test": {
-      "cache": true
-    }
+    "e2e": { "cache": true },
+    "lint": { "cache": true },
+    "test": { "cache": true }
   },
-  "defaultBase": "main"
+  "defaultBase": "main",
+  "nxCloudId": "66dcce27bf4317d5d4b48f77"
 }
