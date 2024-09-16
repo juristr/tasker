@@ -9,9 +9,21 @@
     "e2e": {
       "cache": true
     },
-    "lint": { "cache": true },
-    "test": { "cache": true }
+    "lint": {
+      "cache": true
+    },
+    "test": {
+      "cache": true
+    }
   },
   "defaultBase": "main",
-  "nxCloudId": "66dcceca7e73ba0666db998d"
+  "nxCloudId": "66dcceca7e73ba0666db998d",
+  "plugins": [
+    {
+      "plugin": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "playwright:e2e"
+      }
+    }
+  ]
 }

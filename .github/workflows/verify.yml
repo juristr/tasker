@@ -27,7 +27,7 @@ jobs:
           run_install: false
 
       - name: Start Nx Cloud run
-        run: pnpm dlx nx-cloud start-ci-run --distribute-on="5 linux-medium-js" --stop-agents-after="e2e"
+        run: pnpm dlx nx-cloud start-ci-run --distribute-on="5 linux-medium-js" --stop-agents-after="e2e-ci"
 
       - name: Install dependencies
         run: pnpm install
@@ -39,7 +39,7 @@ jobs:
         run: |
           pnpm format:check
           pnpm lint
-          pnpm nx run-many -t test build e2e
+          pnpm nx run-many -t test build e2e-ci
         # pnpm --filter "@tasker/*" test
         # pnpm --filter "@tasker/web" build
 
