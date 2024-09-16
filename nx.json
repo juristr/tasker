@@ -25,5 +25,9 @@
         "targetName": "playwright:e2e"
       }
     }
-  ]
+  ],
+  "namedInputs": {
+    "defaults": ["sharedGlobals"],
+    "sharedGlobals": [".github/workflows/verify.yml"]
+  }
 }
